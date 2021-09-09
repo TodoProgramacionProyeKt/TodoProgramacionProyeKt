@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cambiar Contraseña</title>
     <link rel="stylesheet" href="/CSS/stylecontraseña.css">
+    <script src="/JS/enviar.js"></script>
 </head>
 <body>
     <header>
         <h1>Cambiar Contraseña</h1>
     </header>
-        <form action="GET">
+        <form id="formulario" action="enviar" onsubmit="return enviar();">
             <fieldset>
                 <p>
                     <label for="pass">Contraseña Antigua:</label>
