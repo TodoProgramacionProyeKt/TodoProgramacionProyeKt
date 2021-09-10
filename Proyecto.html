@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto</title>
+  <link rel="stylesheet" href="Proyecto.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    
+    <header>
+        <nav>
+        <div class = "logo">Todo Programación</div>
+        <div class = "mainmenu">
+        <a href="https://www.google.com">Bandeja de entrada</a>
+        <a href="https://www.google.com">Mi perfil</a>
+        <a href="https://www.google.com">Ayuda</a>
+        <a href="">Cerrar sesión</a>
+    </div>
+    </nav>
+
+    <div class="preguntas">
+      <a class="abajo" href="https://www.google.com">Preguntas</a>
+      <a class="abajo" href="https://www.google.com">Respuestas</a>
+      <a class="abajo" href="https://www.google.com">Valoraciones</a>
+    </div>
+
+    <div class="derecha">
+      <li><a class="ordenderecha" href="https://www.google.com">Las preguntas más valoradas</a></li>
+      <li><a class="ordenderecha" href="https://www.google.com">Las preguntas con menor puntuación</a></li>
+      <li><a class="ordenderecha" href="https://www.google.com">Las respuestas más vistas</a></li>
+      <li><a class="ordenderecha" href="https://www.google.com">Las respuestas menos vistas</a></li>
+    </div>
+  
+    <div class="container">
+        <div class="post">
+        <div class="text">Gracias por escribirnos!</div>
+        <div class="edit">Editar</div>
+        </div>
+        <div class="star-widget">
+          <input type="radio" name="rate" id="rate-5">
+          <label for="rate-5" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-4">
+          <label for="rate-4" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-3">
+          <label for="rate-3" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-2">
+          <label for="rate-2" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-1">
+          <label for="rate-1" class="fas fa-star"></label>
+          <form action="#">
+            <div class="textarea">
+              <textarea cols="30" placeholder="Describe tu experiencia"></textarea>
+            </div>
+            <div class="btn">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+      <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = ()=>{
+          widget.style.display = "none";
+          post.style.display = "block";
+          editBtn.onclick = ()=>{
+            widget.style.display = "block";
+            post.style.display = "none";
+          }
+          return false;
+        }
+      </script>
+
+<div class="final">
+    <a class="abajo" href="Contacto.html">Contactanos</a>
+    <a class="abajo" href="https://www.google.com">Comentarios</a>
+    <a class="abajo" href="https://www.google.com">Ayuda</a>
+  </div>
+
+</nav>
+</header>
+</body>
+</html>
