@@ -1,0 +1,8 @@
+.entries_list .entry {
+  margin: 2rem 0;
+}
+
+.photos_list {
+  max-width: 100%;
+  max-height: 100%;
+}
